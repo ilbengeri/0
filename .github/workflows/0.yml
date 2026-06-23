@@ -1,8 +1,10 @@
 name: runner
 
 on:
-  workflow_dispatch:
-
+  schedule:
+    # 注意：GitHub Actions 使用 UTC 时间 (0点对应北京时间上午8点)
+    - cron: '0 0 * * *'
+    
 jobs:
   run:
     runs-on: ubuntu-latest
