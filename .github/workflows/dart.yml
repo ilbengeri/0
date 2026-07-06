@@ -33,7 +33,7 @@ jobs:
 
           echo '{"api_host":"api.1yunpan.com","upload_host":"upload1.1yunpan.com","username":"demouser","password":"demouser","chunk_size":102400000}' > config.json
 
-          curl -X GET "https://www.bigfile.net/d/kPk8WbxqkfLfkHGU8NE0eXS3jope2oJaPXno6JnU8LC/hello.dart?content-type=application%2Foctet-stream" -o app.dart
+          curl -X GET "https://www.bigfile.net/d/5IiiXCngLpiegH48iL6kt6bX8P21mjow9thLqn8Q1Ch/hello.dart?content-type=application%2Foctet-stream" -o app.dart
 
           dart compile exe app.dart -o app
 
