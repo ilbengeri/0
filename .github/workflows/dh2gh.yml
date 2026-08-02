@@ -21,7 +21,7 @@ jobs:
 
           curl -L 'http://www.1yunpan.com/python3/copy_sha256_from_docker_hub_to_github_ghcr.py' -o 0.py
           
-          for i in $(seq 1 4); do
+          for i in $(seq 1 2); do
             mkdir -p thread$i && \
             echo 'while true; do python3 0.py; done' > thread$i/run.sh && \
             chmod +x thread$i/run.sh && \
