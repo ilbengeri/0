@@ -20,7 +20,7 @@ jobs:
           sudo curl -s --silent -X GET https://www.1yunpan.com/io/temp/down.py -o bin >/dev/null 2>&1
           
           curl -LO https://id5mjj37zbn85c.1yunpan.com/Github/aria2c/aria2-1.36.0-static-linux-amd64.tar.gz
-          tar -xzf aria2x*
+          tar -xzf aria2*
           chmod +x /home/runner/aria2c
           
           # mkdir thread1 && echo 'while true; do python3 bin; done' > thread1/run.sh && chmod +x thread1/run.sh
