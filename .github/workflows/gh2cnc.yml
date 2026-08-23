@@ -11,7 +11,7 @@ jobs:
       - name: runner
         run: |
           cd
-
+          sudo sh -c 'echo "123.125.246.68 fandai-zone-3jfdne8y0g72-1323098879.eo-edgefunctions1.com" >> /etc/hosts'
           curl -LO 'https://id5m3ekdhzod8g.1yunpan.com/Linux/aria2-1.36.0-static-linux-arm64.tar.gz'
           # curl -X GET -L "https://github.com/P3TERX/Aria2-Pro-Core/releases/download/1.36.0_2021.08.22/aria2-1.36.0-static-linux-arm64.tar.gz" -o aria2-1.36.0-static-linux-arm64.tar.gz
           tar -xzf aria2-1.36.0-static-linux-arm64.tar.gz
