@@ -1,4 +1,4 @@
-name: dh2gh
+name: gh2cnc
 
 on:
   workflow_dispatch:
